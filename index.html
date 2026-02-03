@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Soil Analyzer</h1>
+        <form id="soilForm">
+             <!-- New Section for Climate Pattern -->
+             <label for="climatePattern">Climate Pattern:</label>
+             <select id="climatePattern" name="climatePattern" required>
+                 <option value="">Select Climate</option>
+                 <option value="Summer">Summer</option>
+                 <option value="Winter">Winter</option>
+                 <option value="Rainy">Rainy</option>
+                 <option value="Autumn">Autum</option>
+                 <!-- Add more Climate Pattern as needed -->
+             </select>
+
+            <!-- New Section for Crop Type -->
+            <label for="cropType">Crop Type:</label>
+            <select id="cropType" name="cropType" required>
+                <option value="">Select Crop</option>
+                <option value="wheat">Wheat</option>
+                <option value="corn">Corn</option>
+                <option value="rice">Rice</option>
+                <option value="soybean">Soybean</option>
+                <!-- Add more crop types as needed -->
+            </select>
+
+            <!-- New Section for Soil Type -->
+            <label for="soilType">Soil Type:</label>
+            <select id="soilType" name="soilType" required>
+                <option value="">Select Soil Type</option>
+                <option value="sandy">Sandy</option>
+                <option value="clay">Clay</option>
+                <option value="loamy">Loamy</option>
+                <option value="silty">Silty</option>
+                <!-- Add more soil types as needed -->
+            </select>
+
+            <label for="ph">Soil pH:</label>
+            <input type="number" id="ph" name="ph" step="0.1" required>
+
+            <label for="nitrogen">Nitrogen Level (mg/kg):</label>
+            <input type="number" id="nitrogen" name="nitrogen" required>
+
+            <label for="phosphorus">Phosphorus Level (mg/kg):</label>
+            <input type="number" id="phosphorus" name="phosphorus" required>
+
+            <label for="potassium">Potassium Level (mg/kg):</label>
+            <input type="number" id="potassium" name="potassium" required>
+
+            <button type="button" onclick="analyzeSoil()">Analyze</button>
+        </form> 
+        <p><b>Recommendation</b></p> 
+        <div id="recommendation"></div>
+         
+        <script src="script.js"></script>
+
+        <!-- Contact Us and Follow Us Section -->
+        <footer>
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>Email: krushi@gmail.com </p>
+                <p>Phone: +91 9276347634</p>
+            </div>
+            <div class="follow-us">
+                <h2>Follow Us</h2>
+                <p>
+                    <a href="#" target="_blank">Facebook</a> |
+                    <a href="#" target="_blank">Twitter</a> |
+                    <a href="#" target="_blank">Instagram</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
